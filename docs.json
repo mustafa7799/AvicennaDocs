@@ -37,10 +37,10 @@
                   "guides/workshop/actions/decode-text",
                   "guides/workshop/actions/set-variable",
                   "guides/workshop/actions/generate-text",
-                  "guides/workshop/actions/send-email",
-                  "guides/workshop/actions/respond"
+                  "guides/workshop/actions/send-email"
                 ]
-              }
+              },
+              "guides/workshop/actions/respond"
             ]
           },
           {
@@ -137,10 +137,6 @@
     "library": "lucide"
   },
   "description": "Complete, organized reference for Avicenna's features, Workshop, settings, and more!",
-  "banner": {
-    "content": "This documentation is still under construction! Please excuse any faults or inaccuracies.",
-    "dismissible": true
-  },
   "errors": {
     "404": {
       "title": "Whoops, looks like you're lost!"
