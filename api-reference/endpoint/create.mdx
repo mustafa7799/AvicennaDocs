@@ -1,4 +1,57 @@
 ---
-title: 'Create Plant'
-openapi: 'POST /plants'
+title: 'Create API Key'
+api: 'POST /admin/api-keys'
+description: "Add a new API key to authenticate endpoint requests."
 ---
+
+## Body Parameters
+
+<ParamField body="name" type="string" required>
+  The API key reference name.
+</ParamField>
+
+<ParamField body="ratelimit_min" type="number" default="60">
+  The ratelimit assigned to this specific API key. Measured in requests per minute.
+</ParamField>
+
+<ParamField body="permission" type="string">
+  The API key can be assigned either the `user` or the `admin` permission.
+  - `user`: Allows access only to unprotected endpoints or endpoints with the `user` type authentication enabled.
+  - `admin`: Allows access to all endpoints by default and admin endpoints (manage API keys).
+</ParamField>
+
+<RequestExample>
+
+```bash cURL
+curl --request POST \
+  -X https://YOUR_API_SUBDOMAIN.avicenna.dev/admin/api-keys \
+  -H 'Authorization: Bearer avcna_sk_xxxxxxxxx' \
+  -H 'Content-Type: application/json' \
+  -d '{
+            "name": "Admin Key Production", 
+            "ratelimit_min":120, 
+            "permission":"admin"
+        }'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+    "success": true,
+    "key": "avcna_sk_2675c53f9ed29fdac811b4c3bdda5b32598832523e4836fbdeadc1510b877812",
+    "key_data": {
+        "id": "6c3c3816-b8ad-4279-8fe0-1d19a0640f96",
+        "name": "Admin Key Production",
+        "last_used_at": null,
+        "created_at": 2026-01-01T00:00:00+00:00,
+        "ratelimit_min": 120,
+        "permission": "admin"
+    }
+
+}
+```
+
+</ResponseExample>

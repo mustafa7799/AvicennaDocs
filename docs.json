@@ -55,21 +55,14 @@
       },
       {
         "tab": "API Reference",
-        "hidden": true,
+        "hidden": false,
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Authentication",
+            "icon": "key",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoints",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/api-keys/create",
+              "api-reference/api-keys/delete"
             ]
           }
         ]
@@ -79,16 +72,6 @@
         "hidden": true,
         "pages": [
           "changelog"
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Authentication",
-            "icon": "key",
-            "pages": []
-          }
         ]
       },
       {
