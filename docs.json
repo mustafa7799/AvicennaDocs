@@ -46,9 +46,9 @@
           {
             "group": "Dashboard",
             "pages": [
-              "guides/dashboard/settings",
+              "guides/dashboard/authentication",
               "guides/dashboard/logs",
-              "guides/dashboard/authentication"
+              "guides/dashboard/settings"
             ]
           }
         ]
@@ -79,6 +79,16 @@
         "hidden": true,
         "pages": [
           "changelog"
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "icon": "key",
+            "pages": []
+          }
         ]
       },
       {
