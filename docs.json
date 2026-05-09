@@ -65,7 +65,8 @@
             "group": "Authentication",
             "icon": "key",
             "pages": [
-              "api-reference/api-keys/create"
+              "api-reference/api-keys/create",
+              "api-reference/api-keys/delete"
             ]
           }
         ]
