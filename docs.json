@@ -92,6 +92,11 @@
           }
         ],
         "icon": "book-open-text"
+      },
+      {
+        "tab": "Changelog",
+        "icon": "history",
+        "href": "https://www.avicenna.dev/changelog"
       }
     ]
   },
