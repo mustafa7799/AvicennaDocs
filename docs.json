@@ -43,7 +43,8 @@
                   "guides/workshop/actions/set-variable",
                   "guides/workshop/actions/generate-text",
                   "guides/workshop/actions/send-email",
-                  "guides/workshop/actions/respond"
+                  "guides/workshop/actions/respond",
+                  "guides/workshop/actions/match-regex"
                 ]
               }
             ]

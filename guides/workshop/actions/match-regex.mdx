@@ -1,0 +1,40 @@
+---
+title: "Match Regex"
+icon: "regex"
+description: "Match or extract patterns from text using regular expressions"
+---
+
+The **Match Regex** action allows you to apply [regular expression (regex)](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) patterns to pieces of text to find and extract matching strings.
+
+<Frame>
+  ![Image](/images/image-14.png)
+</Frame>
+
+---
+
+### Input Text
+
+The **input text** is the base text value that will be searched for the regex pattern. This can be static text or a variable.
+
+### Pattern
+
+The **pattern** is a regex expression that will be used to search for matches in the input text. This can be static text or a variable. Refer to [this reference](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) for help writing regex.
+
+### Reference Variables
+
+<Frame>
+  ![Screenshot 2026 05 26 At 4 53 17 PM](/images/Screenshot-2026-05-26-at-4.53.17-PM.png)
+</Frame>
+
+These variables allow you to refer to the result of the regex match in future action blocks down your endpoint's flow. A custom name must be assigned to to refer to these variables
+
+<Tip>
+  Make your reference variable names as descriptive and unique as possible to prevent your endpoint flow from becoming cluttered. If a future variable is assigned the same name, the value of your reference variable will be overriden.
+</Tip>
+
+The following variables will be generated based off of your custom name:
+
+- `{result.[NAME].matches}` for any matches not included in capture groups
+- `{result.[NAME].captures}` for any matches included in capture groups
+- `{result.[NAME].[CAPTURE_GROUP_NAME]}` for any matches included in named capture groups
+- `{result.[NAME].isMatch}` for a true/false boolean result indicating whether any match was found
