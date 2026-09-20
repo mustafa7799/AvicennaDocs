@@ -35,16 +35,17 @@
                 "group": "Actions",
                 "icon": "hammer",
                 "pages": [
+                  "guides/workshop/actions/respond",
+                  "guides/workshop/actions/set-variable",
                   "guides/workshop/actions/send-external-request",
                   "guides/workshop/actions/manipulate-text",
                   "guides/workshop/actions/manipulate-image",
                   "guides/workshop/actions/encode-text",
                   "guides/workshop/actions/decode-text",
-                  "guides/workshop/actions/set-variable",
+                  "guides/workshop/actions/match-regex",
                   "guides/workshop/actions/generate-text",
                   "guides/workshop/actions/send-email",
-                  "guides/workshop/actions/respond",
-                  "guides/workshop/actions/match-regex"
+                  "guides/workshop/actions/send-discord-message"
                 ]
               }
             ]
