@@ -1,0 +1,26 @@
+---
+title: 'Ping API'
+api: 'POST /api/ping'
+description: "Ping your API to check if its online or restart it."
+---
+
+<RequestExample>
+
+```bash cURL
+curl -X GET https://YOUR_API_SUBDOMAIN.avicenna.run/api/ping \
+  -H 'Content-Type: application/json' \
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+    "success":true,
+    "status":200,
+    "message":"🏓 Pong!"
+    }
+```
+
+</ResponseExample>
