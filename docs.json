@@ -71,6 +71,13 @@
               "api-reference/api-keys/create",
               "api-reference/api-keys/delete"
             ]
+          },
+          {
+            "group": "Status",
+            "icon": "radio",
+            "pages": [
+              "api-reference/status/ping"
+            ]
           }
         ],
         "icon": "square-terminal"
